@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="save.php" method="get">
+            <fieldset>
+                <legend>Form do estrondo</legend>
+                <div>
+                    Name:
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    Age:
+                    <input type="radio" name="age" value="18">18
+                    <input type="radio" name="age" value="19-35">19-35
+                    <input type="radio" name="age" value="36-48">36-48
+                    <input type="radio" name="age" value=">49">>49
+                </div>
+                <div>
+                    Profession:
+                    <input type="text" name="profession">
+                </div>
+                <div>
+                    Country:
+                    <select name="country">
+                        <option value="portugal">Portugal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <p>How did you find out about the website?</p>
+                    <textarea name="idk" rows="4" cols="50"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
