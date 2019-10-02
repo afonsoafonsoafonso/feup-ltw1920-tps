@@ -60,15 +60,16 @@ a[href="login.html"] {
 
 #menu ul {
     text-align: center;
-    list-style-type:none;
     padding: 0em;
     margin-top: 0em;
+    margin-bottom: 0em;
 
 }
 
 #menu ul li {
     padding-top: 1.25em;
     padding-bottom: 1.25em;
+    display: block;
 }
 
 #menu ul li a {
@@ -100,11 +101,13 @@ a[href="login.html"] {
 }
 
 aside {
-    background: gray;
+    background: black;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 0.65em;
     padding-right: 0.65em;
+    margin-top: 0em;
+    margin-bottom: 1em;
     color: white;
 }
 
@@ -112,5 +115,30 @@ aside a {
     color: white;
 }
 
+article img {
+    width: 100%;
+    height: auto;
+
+}
+
+article header {
+    padding-right: 90em;
+    padding-left: 1em;
+}
+
+article header h1 {
+    position: absolute;
+    padding: inherit;
+    text-shadow: black 4px 4px 3px;
+}
+
+article p, article footer {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 2em;
+}
 
 
