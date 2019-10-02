@@ -1,0 +1,116 @@
+body {
+    margin-top: 1em;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+body > header {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    background-color: #046DD5;
+    margin-bottom: 0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+header #signup a {
+    color: white; 
+}
+
+header h1 {
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: red;
+}
+
+header h2 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 0.8em;
+}
+
+header #signup {
+    font-size:0.8em;
+}
+
+a[href="register.html"] {
+    padding-right: 0.7em;
+    border-right: 1px solid;
+    border-right-color: white;
+}
+
+a[href="login.html"] {
+    padding-left: 0.6em;
+}
+
+#menu input[type="checkbox"] {
+    display: none;
+}
+
+#menu label[class="hamburger"] {
+    display: none;
+}
+
+#menu ul {
+    text-align: center;
+    list-style-type:none;
+    padding: 0em;
+    margin-top: 0em;
+
+}
+
+#menu ul li {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+#menu ul li a {
+    color: black;
+}
+
+#menu ul li:nth-of-type(1) {
+    border-top: 5px solid #E1493E;
+}
+
+#menu ul li:nth-of-type(2) {
+    border-top: 5px solid #8ABA56;
+}
+
+#menu ul li:nth-of-type(3) {
+    border-top: 5px solid #5B4282;
+}
+
+#menu ul li:nth-of-type(4) {
+    border-top: 5px solid #FF8932;
+}
+
+#menu ul li:nth-of-type(5) {
+    border-top: 5px solid #19B6E9;
+}
+
+#menu ul li:nth-of-type(6) {
+    border-top: 5px solid #E84C8B;
+}
+
+aside {
+    background: gray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+    color: white;
+}
+
+aside a {
+    color: white;
+}
+
+
+
