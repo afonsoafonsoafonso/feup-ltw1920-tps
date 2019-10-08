@@ -14,6 +14,7 @@ body > header {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header a {
@@ -139,6 +140,26 @@ article p, article footer {
 
 article p:first-of-type::first-letter {
     font-size: 2em;
+}
+
+#news footer {
+    color: white;
+    background: #F4655F;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-bottom: 1em;
+}
+
+#news footer:visited {
+    color: white;
+}
+
+footer:last-of-type {
+    background: black;
+    color: white;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.8em;
 }
 
 
