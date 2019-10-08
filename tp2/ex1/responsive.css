@@ -1,0 +1,71 @@
+@media (max-width: 60em) {
+    aside {
+        display: none;
+    }
+
+    body {
+        grid-template-columns: auto;
+    }
+
+    #news {
+        grid-column-start: 1;
+        margin-bottom: 0em;
+    }
+
+    #news article {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 30em) {
+    body {
+        background: white;
+        width: 30em;
+    }
+
+    body header h2 {
+        display: none;
+    }
+
+    #signup {
+        display: block;
+        float: left;
+    }
+    
+    article>header>h1 {
+        font-size: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+        display: block;
+        position: static;   
+        text-shadow: black 0px 0px 0px;
+    }
+
+    article>header>h1>a {
+        color: black;
+    }
+
+    #menu input[type="checkbox"] {
+        display: initial;
+    }
+
+    #menu label[class="hamburger"] {
+        display: initial;
+    }
+
+    #menu {
+        background: black;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    /* Não funciona???? */
+    #hambuger:checked + #menu>ul {
+        display: block;
+    }
+}
