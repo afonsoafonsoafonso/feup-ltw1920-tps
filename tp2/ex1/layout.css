@@ -1,0 +1,9 @@
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    flex-grow: 1;
+}
