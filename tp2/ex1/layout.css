@@ -2,8 +2,57 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: white;
 }
 
 #menu ul li {
     flex-grow: 1;
 }
+
+body {
+    display: grid;
+    margin: auto;  
+    width: 60em;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    background-color: #EDEFF0;
+}
+
+body header {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+ body>footer {
+    grid-column-start: 1;
+    grid-row-start: 7;
+    margin-right: 1em;
+}
+
+#news article {
+    margin-top: 1em;
+    background-color: white;
+    margin-right: 1em;
+}
+
+#signup {
+    display: inline-block;
+    float: right;
+    margin-right: 2em;
+}
+
+header h2 {
+    display: inline-block;
+}
+
+article h1 {
+    width: 12em;
+}
+
