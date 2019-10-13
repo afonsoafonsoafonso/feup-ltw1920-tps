@@ -1,0 +1,47 @@
+body {
+  display: flex;  
+  width: 60em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#green {
+  background-color: #baffc9;
+  order: 3;
+}
+
+#orange {
+  background-color: #ffdfba;
+  flex-grow: 2;
+  order: 4;
+}
+
+#yellow {
+  background-color:   #ffffba;
+  order: 1;
+}
+
+#red {
+  background-color:   #ffb3ba;
+  order: 2;
+}
+
+#blue {
+  background-color:   #bae1ff;
+  order: 5;
+}
+
+ul { 
+  padding: 0; 
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
