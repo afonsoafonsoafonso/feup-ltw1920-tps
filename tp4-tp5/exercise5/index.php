@@ -67,7 +67,12 @@
             echo '<p>' . $article['fulltext'] . '</p>';
             echo '<footer>';
             echo '<span class="author">' . $article['username'] . '</span>';
-            echo '<span class="tags">' . $article['tags'] . '</span>';
+            echo '<span class="tags">'; 
+            $tags = explode(",", $article['tags']);
+            foreach($tags as $tag) {
+                echo '<a href="index.html"> #' . $tag . ' ' . '</a>';
+            } 
+            echo '</span>';
             echo '<span class="date">' . $article['published'] . '</span>'; 
             echo '</footer>';
             echo '</article>';
