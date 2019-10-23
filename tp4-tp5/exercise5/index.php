@@ -73,7 +73,7 @@
                 echo '<a href="index.phps"> #' . $tag . ' ' . '</a>';
             } 
             echo '</span>';
-            echo '<span class="date">' . gmdate('r', $article['published']) . '</span>'; 
+            echo '<span class="date">' . substr(gmdate('r', $article['published']), 0, -5) . '</span>'; 
             echo '</footer>';
             echo '</article>';
         }
