@@ -70,10 +70,10 @@
             echo '<span class="tags">'; 
             $tags = explode(",", $article['tags']);
             foreach($tags as $tag) {
-                echo '<a href="index.html"> #' . $tag . ' ' . '</a>';
+                echo '<a href="index.phps"> #' . $tag . ' ' . '</a>';
             } 
             echo '</span>';
-            echo '<span class="date">' . $article['published'] . '</span>'; 
+            echo '<span class="date">' . gmdate('r', $article['published']) . '</span>'; 
             echo '</footer>';
             echo '</article>';
         }
