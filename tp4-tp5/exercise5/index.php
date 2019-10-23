@@ -70,7 +70,7 @@
             echo '<span class="tags">'; 
             $tags = explode(",", $article['tags']);
             foreach($tags as $tag) {
-                echo '<a href="index.phps"> #' . $tag . ' ' . '</a>';
+                echo '<a href="index.php"> #' . $tag . ' ' . '</a>';
             } 
             echo '</span>';
             echo '<span class="date">' . substr(gmdate('r', $article['published']), 0, -5) . '</span>'; 
