@@ -66,7 +66,7 @@
             echo '<p>' . $article['introduction'] . '</p>';
             echo '<p>' . $article['fulltext'] . '</p>';
             echo '<footer>';
-            echo '<span class="author">' . $article['username'] . '</span';
+            echo '<span class="author">' . $article['username'] . '</span>s';
             echo '</footer>';
             echo '</article>';
         }
