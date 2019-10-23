@@ -1,0 +1,163 @@
+body > header {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    background-color: #046DD5;
+    margin-bottom: 0em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header>a {
+    color: white;
+}
+
+header #signup a {
+    color: white; 
+}
+
+header h1 {
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: red;
+}
+
+header h2 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 0.8em;
+}
+
+header #signup {
+    font-size:0.8em;
+}
+
+a[href="register.html"] {
+    padding-right: 0.7em;
+    border-right: 1px solid;
+    border-right-color: white;
+}
+
+a[href="login.html"] {
+    padding-left: 0.6em;
+}
+
+#menu input[type="checkbox"] {
+    display: none;
+}
+
+#menu label[class="hamburger"] {
+    display: none;
+}
+
+#menu ul {
+    text-align: center;
+    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+
+}
+
+#menu ul li {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    display: block;
+}
+
+#menu ul li a {
+    color: black;
+}
+
+#menu ul li:nth-of-type(1) {
+    border-top: 5px solid #E1493E;
+}
+
+#menu ul li:nth-of-type(2) {
+    border-top: 5px solid #8ABA56;
+}
+
+#menu ul li:nth-of-type(3) {
+    border-top: 5px solid #5B4282;
+}
+
+#menu ul li:nth-of-type(4) {
+    border-top: 5px solid #FF8932;
+}
+
+#menu ul li:nth-of-type(5) {
+    border-top: 5px solid #19B6E9;
+}
+
+#menu ul li:nth-of-type(6) {
+    border-top: 5px solid #E84C8B;
+}
+
+aside {
+    background: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: white;
+}
+
+aside a {
+    color: white;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+
+}
+
+article header {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+article header h1 {
+    position: absolute;
+    padding: inherit;
+    text-shadow: black 4px 4px 3px;
+}
+
+article p, article footer {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
+#news footer {
+    color: white;
+    background: #F4655F;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-bottom: 1em;
+}
+
+#news footer:visited {
+    color: white;
+}
+
+footer:last-of-type {
+    background: black;
+    color: white;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.8em;
+}
+
+/*
+* {
+    outline: 1px solid red;
+}
+*/
