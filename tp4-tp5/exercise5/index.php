@@ -58,9 +58,11 @@
         $articles = $stmt->fetchAll();
       
         foreach($articles as $article) {
+            echo '<article>';
+            echo '<header>';
             echo '<h1>' . $article['title'] .' </h1>';
+            echo '<img src="http://lorempixel.com/600/300/business/" alt="">';
             echo '<p>' . $article['introduction'] . '</p>';
-            
         }
       ?>
     </section>
