@@ -61,8 +61,14 @@
             echo '<article>';
             echo '<header>';
             echo '<h1>' . $article['title'] .' </h1>';
+            echo '</header>';
             echo '<img src="http://lorempixel.com/600/300/business/" alt="">';
             echo '<p>' . $article['introduction'] . '</p>';
+            echo '<p>' . $article['fulltext'] . '</p>';
+            echo '<footer>';
+            echo '<span class="author">' . $article['username'] . '</span';
+            echo '</footer>';
+            echo '</article>';
         }
       ?>
     </section>
