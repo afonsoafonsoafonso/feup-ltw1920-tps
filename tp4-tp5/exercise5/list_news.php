@@ -1,9 +1,8 @@
 <?php
-	$db = new PDO('sqlite:news.db');
+	include_once('database/connection.php');
+	include_once('database/news.php');
 
-	$stmt = $db->prepare('SELECT * FROM news	');
-	$stmt->execute();
-	$articles = $stmt->fetchAll();
+	$articles = getAllNews();
 
 	foreach($articles as $article) {
 		echo '<article>';
@@ -22,6 +21,7 @@
 		} 
 		echo '</span>';
 		echo '<span class="date">' . substr(gmdate('r', $article['published']), 0, -5) . '</span>'; 
+		echo '<a href="news_item.php?id='. $article['id'] . '">' . $article['comments'] . ' comments' . '</a>';
 		echo '</footer>';
 		echo '</article>';
 	}
