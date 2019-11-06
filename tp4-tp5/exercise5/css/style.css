@@ -1,3 +1,7 @@
+a .edit_news {
+    color: black !important;
+}
+
 body > header {
     padding-top: 0.5em;
     padding-bottom: 1em;
