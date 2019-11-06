@@ -1,11 +1,4 @@
 <?php
-include_once('database/connection.php');
-include_once('database/item.php');
-include_once('database/comments.php');
-
-$article = getArticle();
-$comments = getComments();
-
 echo '<article>';
 echo '<header>';
 echo '<h1><a href="item.html">' . $article[0]['title'] . '</a></h1>';
