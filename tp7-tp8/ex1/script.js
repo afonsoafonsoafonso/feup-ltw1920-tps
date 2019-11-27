@@ -9,20 +9,49 @@ for(let query in byqueryall) {
     console.log(byqueryall[query].outerHTML);
 }
 
+
+
 let form = document.getElementsByTagName('form')[0];
-form.addEventListener('submit', function() {
-    let table = document.querySelector("#products");
-    let description = document.querySelector("form label:nth-of-type(1) input").value;
-    let quantity = document.querySelector("form label:nth-of-type(2) input").value;
-    console.log(description);
-    console.log(quantity);
-    console.log(table);
-    let element = document.createElement('tr');
-    element.innerHTML = '<td>' + description + '</td>' + '<td> <input value = "' + quantity + '"></td><td><input type="button" value="Remove"></td></tr>';
-    table.append(element);
-    alert('Submitted!');
-    event.preventDefault();
+
+form.addEventListener('submit', function(event) {
+  let line = document.createElement('tr');
+
+  let description = document.querySelector('form input[name=description]').value;
+  let quantity = document.querySelector('form input[name=quantity]').value;
+
+  line.innerHTML = `<tr><td>${description}</td><td><input id="quantity" value="${quantity}"></td><td><input id="remove" type="button" value="Remove"></tr>`;
+
+  let table = document.getElementById('products');
+  table.append(line);
+  updateTotal(document);
+
+  let remove = line.querySelector('input[type=button]');
+
+  remove.addEventListener('click', function() {
+      this.parentNode.parentNode.remove();
+      updateTotal(document);
+  });
+
+  let change = line.querySelector('#quantity');
+
+  change.addEventListener('change', function() {
+      updateTotal(document);
+  });
+
+  event.preventDefault();
 });
 
+function updateTotal(document) {
+    let total = document.querySelector('footer span');
+    var new_total = 0;
+      
+    let quantities = document.querySelectorAll('#quantity');
+      
+    for(let i=0; i<quantities.length; i++) {
+        new_total += parseInt(quantities[i].value);
+    }
+
+    total.innerHTML = new_total;
+};
 
 
